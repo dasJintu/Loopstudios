@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://fm-loopstudios.netlify.app/
+- Solution URL: https://github.com/dasJintu/Loopstudios
 - Live Site URL: https://fm-loopstudios.netlify.app/
 
 ## My process
