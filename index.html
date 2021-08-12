@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-alata">
+    <header
+      class="
+        bg-hero-image-mobile
+        md:bg-hero-image-desktop
+        bg-cover bg-no-repeat bg-top
+        py-4
+      "
+    >
+      <nav
+        class="
+          pt-16
+          container
+          flex
+          justify-between
+          items-center
+          font-medium
+          text-white
+        "
+      >
+        <img class="h-8" src="/images/logo.svg" alt="" />
+        <ul class="hidden md:flex justify-end items-center gap-6">
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+        <button id="hamBtn" class="md:hidden">
+          <img src="/images/icon-hamburger.svg" alt="" />
+        </button>
+      </nav>
+      <!-- mobile nav menu -->
+      <div
+        id="hamMenu"
+        class="absolute top-0 hidden h-screen w-screen bg-gray-800 text-white"
+      >
+        <div class="container flex justify-between items-center py-20">
+          <img class="h-8" src="/images/logo.svg" alt="" />
+          <button id="hamClose">
+            <img class="h-6" src="/images/icon-close.svg" alt="" />
+          </button>
+        </div>
+        <ul class="container space-y-6 uppercase text-xl font-thin pt-20">
+          <li><a href="">About</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Events</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+      <!-- end of mobile nav menu -->
+      <main class="container py-24">
+        <h1
+          class="
+            w-full
+            md:w-10/12
+            lg:w-7/12
+            uppercase
+            text-5xl
+            lg:text-6xl
+            text-white
+            border-2
+            md:border-4
+            border-white
+            font-josefin
+            p-4
+            md:p-6
+            mb-10
+            md:mb-0
+          "
+        >
+          Immersive experiences that deliver
+        </h1>
+      </main>
+    </header>
+
+    <section class="container pt-16">
+      <div class="relative">
+        <div class="w-full md:w-9/12">
+          <img
+            class="w-full"
+            src="/images/desktop/image-interactive.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="
+            text-center
+            md:text-left
+            w-full
+            md:w-1/2
+            px-6
+            pt-8
+            md:pt-6 md:absolute
+            z-10
+            bottom-0
+            right-0
+            bg-white
+          "
+        >
+          <h1 class="uppercase font-josefin text-4xl">
+            The leader in interactive VR
+          </h1>
+          <p class="text-gray-400 pt-8">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-16">
+      <div class="flex justify-center md:justify-between items-center">
+        <h1 class="font-josefin text-4xl uppercase tracking-wider">
+          Our creations
+        </h1>
+        <button
+          class="
+            hidden
+            md:block
+            bg-white
+            hover:bg-gray-800
+            border border-gray-800
+            text-gray-800
+            hover:text-white
+            transition
+            uppercase
+            font-light
+            tracking-wider
+            px-9
+            py-3
+          "
+        >
+          See all
+        </button>
+      </div>
+      <div
+        class="
+          py-14
+          grid grid-cols-1
+          md:grid-cols-4
+          gap-x-8
+          md:gap-x-10
+          gap-y-8
+          md:gap-y-14
+          text-white
+        "
+      >
+        <div class="hover:text-gray-800">
+          <img
+            class="
+              hidden
+              md:block
+              bg-cover bg-center
+              hover:opacity-30
+              transition
+            "
+            src="/images/desktop/image-deep-earth.jpg"
+            alt="earth photo"
+          />
+          <img
+            class="md:hidden bg-cover bg-center w-full"
+            src="/images/mobile/image-deep-earth.jpg"
+            alt="earth photo"
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            Deep<br />earth
+          </h2>
+        </div>
+        <div class="hover:text-gray-800">
+          <img
+            class="
+              hidden
+              md:block
+              bg-cover bg-center
+              hover:opacity-30
+              transition
+            "
+            src="/images/desktop/image-night-arcade.jpg"
+            alt="arcade photo"
+          />
+          <img
+            class="md:hidden bg-cover bg-center w-full"
+            src="/images/mobile/image-night-arcade.jpg"
+            alt="arcade photo"
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            Night<br />arcade
+          </h2>
+        </div>
+        <div class="hover:text-gray-800">
+          <img
+            class="
+              hidden
+              md:block
+              bg-cover bg-center
+              hover:opacity-30
+              transition
+            "
+            src="/images/desktop/image-soccer-team.jpg"
+            alt="man playing soccer"
+          />
+          <img
+            class="md:hidden bg-cover bg-center w-full"
+            src="/images/mobile/image-soccer-team.jpg"
+            alt="man playing soccer"
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            Soccer<br />team VR
+          </h2>
+        </div>
+        <div class="hover:text-gray-800">
+          <img
+            class="
+              hidden
+              md:block
+              bg-cover bg-center
+              hover:opacity-30
+              transition
+            "
+            src="/images/desktop/image-grid.jpg"
+            alt="car photo"
+          />
+          <img
+            class="md:hidden w-full bg-cover bg-center"
+            src="/images/mobile/image-grid.jpg"
+            alt="car photo"
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            The<br />grid
+          </h2>
+        </div>
+        <div class="hover:text-gray-800">
+          <img
+            class="
+              hidden
+              md:block
+              bg-cover bg-center
+              hover:opacity-30
+              transition
+            "
+            src="/images/desktop/image-from-above.jpg"
+            alt="image from space"
+          />
+          <img
+            class="md:hidden w-full bg-cover bg-center"
+            src="/images/mobile/image-from-above.jpg"
+            alt="image from space"
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            From up<br />above VR
+          </h2>
+        </div>
+        <div class="hover:text-gray-800">
+          <img
+            class="
+              hidden
+              md:block
+              bg-cover bg-center
+              hover:opacity-30
+              transition
+            "
+            src="/images/desktop/image-pocket-borealis.jpg"
+            alt=""
+          />
+          <img
+            class="md:hidden w-full bg-cover bg-center"
+            src="/images/mobile/image-pocket-borealis.jpg"
+            alt=""
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            Pocket<br />borealis
+          </h2>
+        </div>
+        <div class="hover:text-gray-800">
+          <img
+            class="hidden md:block bg-cover bg-center hover:opacity-30"
+            src="/images/desktop/image-curiosity.jpg"
+            alt=""
+          />
+          <img
+            class="md:hidden w-full bg-cover bg-center"
+            src="/images/mobile/image-curiosity.jpg"
+            alt=""
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            The<br />curiosity
+          </h2>
+        </div>
+        <div class="hover:text-gray-800">
+          <img
+            class="
+              hidden
+              md:block
+              bg-cover bg-center
+              hover:opacity-30
+              transition
+            "
+            src="/images/desktop/image-fisheye.jpg"
+            alt=""
+          />
+          <img
+            class="md:hidden w-full bg-cover bg-center"
+            src="/images/mobile/image-fisheye.jpg"
+            alt=""
+          />
+          <h2
+            class="pl-4 -mt-20 uppercase tracking-wider text-2xl font-josefin"
+          >
+            Make it<br />fisheye
+          </h2>
+        </div>
+      </div>
+      <div class="md:hidden flex justify-center">
+        <button
+          class="
+            bg-white
+            border border-gray-800
+            text-gray-800
+            uppercase
+            font-light
+            tracking-wider
+            px-9
+            py-3
+          "
+        >
+          see all
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-10">
+      <div
+        class="
+          container
+          flex flex-col
+          md:flex-row
+          justify-between
+          items-center
+          gap-6
+        "
+      >
+        <div class="space-y-6">
+          <img src="/images/logo.svg" alt="Logo" />
+          <ul
+            class="flex flex-col md:flex-row justify-start items-center gap-6"
+          >
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+        </div>
+        <div class="space-y-6">
+          <div class="flex justify-center md:justify-end items-center gap-6">
+            <img src="/images/icon-facebook.svg" alt="facebook icon" />
+            <img src="/images/icon-instagram.svg" alt="instagram icon" />
+            <img src="/images/icon-pinterest.svg" alt="pinterest icon" />
+            <img src="/images/icon-twitter.svg" alt="twitter icon" />
+          </div>
+          <p class="text-center md:text-right text-gray-500">
+            © 2021 Loopstudios. All rights reserved.© 2021 Loopstudios. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>
